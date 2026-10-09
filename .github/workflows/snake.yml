@@ -10,23 +10,18 @@ permissions:
 
 jobs:
   build:
-    name: Jobs to update snake grid
     runs-on: ubuntu-latest
 
     steps:
-      - name: Create dist directory
-        run: mkdir -p dist
-
-      - name: Generate contribution snake
-        uses: Platane/snk@master
+      - name: Generate snake
+        uses: Platane/snk@v3
         with:
           github_user_name: boykisserdev
-          svg_out_path: dist/github-contribution-snake.svg
+          outputs: |
+            dist/github-contribution-snake.svg
+            dist/github-contribution-snake.gif
 
-      - name: Check generated file
-        run: ls -la dist
-
-      - name: Deploy snake to output branch
+      - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
