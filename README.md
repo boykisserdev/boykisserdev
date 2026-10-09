@@ -1,4 +1,4 @@
-![Snake animation](https://github.com/boykisserdev/github-readme/blob/output/github-contribution-snake.svg)
+![Snake animation](https://github.com/boykisserdev/boykisserdev/blob/output/github-contribution-snake.svg)
 
 <h2 align="center">Hi there 👋</h2>
 
